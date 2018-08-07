@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux';
 import { createForms } from 'react-redux-form';
 
-import listItems from './listItemsReducer';
+import contacts from './contactsReducer';
 
 const rootReducer = combineReducers({
-    listItems,
+    contacts,
     ...createForms({
         dynamic: {},
     }),

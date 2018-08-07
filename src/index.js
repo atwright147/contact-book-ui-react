@@ -12,16 +12,16 @@ import ContactForm from './components/Forms/Contact';
 import NoMatch from './components/NoMatch';
 
 import configureStore from './store/configureStore';
-import * as listActions from './actions/listActions';
+import * as contactsActions from './actions/contactsActions';
 
 const initialState = {
-    listItems: [],
+    contacts: [],
 }
 
 const store = configureStore(initialState);
 
 // initialise
-store.dispatch(listActions.updateListItems());
+store.dispatch(contactsActions.getContactsAll());
 
 ReactDOM.render(
     <Provider store={store}>

@@ -1,10 +1,10 @@
 export default (state = [], action) => {
     switch(action.type) {
-        case 'UPDATE_LIST_ITEMS':
+        case 'contacts/GET_ALL':
             return Object.assign(
                 {},
                 state,
-                { items: action.listItems }
+                { all: action.items }
             );
 
         default:
