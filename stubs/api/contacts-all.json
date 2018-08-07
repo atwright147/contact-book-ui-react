@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "firstName": "Jim",
+        "surname": "Kirk",
+        "email": "James.Kirk@example.com",
+        "address1": "1 Trek Avenue",
+        "city": "Trekingham",
+        "county": "Trekshire",
+        "postcode": "TK1 5XL"
+    },
+    {
+        "id": 2,
+        "firstName": "Jean Luc",
+        "surname": "Picard",
+        "email": "Jean-luc.Picard@example.com",
+        "address1": "2 Trek Avenue",
+        "city": "Trekingham",
+        "county": "Trekshire",
+        "postcode": "TK2 6XL"
+    },
+    {
+        "id": 3,
+        "firstName": "Kathryn",
+        "surname": "Janeway",
+        "email": "Kathryn.Janeway@example.com",
+        "address1": "3 Trek Avenue",
+        "city": "Trekingham",
+        "county": "Trekshire",
+        "postcode": "TK3 7XL"
+    }
+]

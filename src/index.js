@@ -8,10 +8,7 @@ import './styles/base.css';
 import MainLayout from './components/Layouts/Main';
 import Home from './components/Home';
 import List from './components/List';
-import UserForm from './components/Forms/UserForm';
-import AddressForm from './components/Forms/AddressForm';
-import FilteredSelect from './components/Forms/FilteredSelect';
-import AnotherView from './components/AnotherView';
+import ContactForm from './components/Forms/Contact';
 import NoMatch from './components/NoMatch';
 
 import configureStore from './store/configureStore';
@@ -31,11 +28,9 @@ ReactDOM.render(
         <Router history={ browserHistory }>
             <Route path="/" component={MainLayout}>
                 <IndexRoute component={Home} />
-                <Route path="list" component={List} />
-                <Route path="user-form" component={UserForm} />
-                <Route path="address-form" component={AddressForm} />
-                <Route path="filtered-select-form" component={FilteredSelect} />
-                <Route path="another-view" component={AnotherView} />
+                <Route path="contacts" component={List} />
+                <Route path="contact/:id/edit" component={ContactForm} />
+                <Route path="contact/create" component={ContactForm} />
                 <Route path="*" component={NoMatch} />
             </Route>
         </Router>

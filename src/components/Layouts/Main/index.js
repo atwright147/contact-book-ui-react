@@ -1,17 +1,11 @@
 import React from 'react';
-import { Link } from 'react-router';
+import Nav from '../../Nav';
 
 const MainLayout = ({ children }) => (
     <div>
+        <Nav />
         <header>
-            <nav>
-                <Link to="/">Home</Link>
-                <Link to="/user-form">User Form</Link>
-                <Link to="/address-form">Address Form</Link>
-                <Link to="/filtered-select-form">Filtered Select Form</Link>
-                <Link to="/another-view">Another View</Link>
-                <Link to="/does-not-exist">A view that doesn&rsquo;t exist</Link>
-            </nav>
+            Header
         </header>
         <main>
             {children}
