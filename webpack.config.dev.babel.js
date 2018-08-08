@@ -10,5 +10,11 @@ export default merge(common, {
         historyApiFallback: {
             index: '/'
         },
-    },
+        proxy: {
+            '/api': {
+                target: 'http://localhost:8882',
+                secure: false
+            }
+        }
+    }
 });
