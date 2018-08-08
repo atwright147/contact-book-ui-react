@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
+import { syncHistoryWithStore } from 'react-router-redux';
 
 import './styles/base.css';
 
@@ -25,7 +26,7 @@ store.dispatch(contactsActions.getContactsAll());
 
 ReactDOM.render(
     <Provider store={store}>
-        <Router history={ browserHistory }>
+        <Router history={syncHistoryWithStore(browserHistory, store)}>
             <Route path="/" component={MainLayout}>
                 <IndexRoute component={Home} />
                 <Route path="contacts" component={List} />
