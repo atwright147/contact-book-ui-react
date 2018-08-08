@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-export const getContactsAll = () => {
-    return function(dispatch) {
+export const getContactsAll = () =>
+    (dispatch) => 
         axios
             .get('/api/contacts')
             .then((res) => {
