@@ -1,0 +1,21 @@
+.contacts-list {
+    border-collapse: collapse;
+
+    & td,
+    & th {
+        border: 1px solid #ccc;
+        padding: .5rem;
+    }
+
+    & tbody {
+        & tr {
+            cursor: pointer;
+        }
+    }
+
+    &.hover-highlight {
+        & tr:hover td {
+            background-color: #ddd;
+        }
+    }
+}

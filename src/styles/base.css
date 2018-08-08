@@ -1,5 +1,6 @@
 @import './general';
 @import './yes-no-buttons';
+@import './contacts-list';
 
 .example {
     display: grid;

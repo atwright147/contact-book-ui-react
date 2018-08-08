@@ -1,10 +1,10 @@
 import React from 'react';
 
-const List = ({ items }) => (
+const List = ({ items, onClickRowHandler }) => (
     <div>
         <h2>List</h2>
         
-        <table className="contacts-list">
+        <table className="contacts-list hover-highlight">
             <thead>
                 <tr>
                     <th>ID</th>
@@ -15,7 +15,10 @@ const List = ({ items }) => (
             </thead>
             <tbody>
                 { items && items.map(item =>
-                    <tr key={item.id}>
+                    <tr
+                        key={item.id}
+                        onClick={() => onClickRowHandler(item.id)}
+                    >
                         <td>{item.id}</td>
                         <td>{item.firstName} {item.surname}</td>
                         <td>{item.email}</td>
