@@ -2,7 +2,7 @@ import React from 'react';
 import { Control, Form } from 'react-redux-form';
 
 const ContactForm = () => (
-    <Form model="contact">
+    <Form model="dynamic">
         <h1>Contact</h1>
 
         <div className="field">

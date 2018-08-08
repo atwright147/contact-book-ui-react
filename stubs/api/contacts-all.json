@@ -7,7 +7,7 @@
         "address1": "1 Trek Avenue",
         "city": "Trekingham",
         "county": "Trekshire",
-        "postcode": "TK1 5XL"
+        "postCode": "TK1 5XL"
     },
     {
         "id": 2,
@@ -17,7 +17,7 @@
         "address1": "2 Trek Avenue",
         "city": "Trekingham",
         "county": "Trekshire",
-        "postcode": "TK2 6XL"
+        "postCode": "TK2 6XL"
     },
     {
         "id": 3,
@@ -27,6 +27,6 @@
         "address1": "3 Trek Avenue",
         "city": "Trekingham",
         "county": "Trekshire",
-        "postcode": "TK3 7XL"
+        "postCode": "TK3 7XL"
     }
 ]

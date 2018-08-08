@@ -13,7 +13,9 @@ import ContactForm from './components/Forms/Contact';
 import NoMatch from './components/NoMatch';
 
 import configureStore from './store/configureStore';
-import * as contactsActions from './actions/contactsActions';
+import contactsActions from './actions/contactsActions';
+
+import loadContact from './helpers/loadContact.js';
 
 const initialState = {
     contacts: [],
@@ -30,7 +32,7 @@ ReactDOM.render(
             <Route path="/" component={MainLayout}>
                 <IndexRoute component={Home} />
                 <Route path="contacts" component={List} />
-                <Route path="contact/:id/edit" component={ContactForm} />
+                <Route path="contact/:id/edit" component={ContactForm} onEnter={loadContact(store)}/>
                 <Route path="contact/create" component={ContactForm} />
                 <Route path="*" component={NoMatch} />
             </Route>
