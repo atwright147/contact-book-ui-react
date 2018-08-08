@@ -8,7 +8,5 @@ export const getContactsAll = () =>
                 dispatch({ type: 'contacts/GET_ALL', items: res.data });
             })
             .catch((err) => {
-                console.error(err);  // eslint-disable-line no-console
-            })
-    }
-}
+                console.error(err);
+            });
