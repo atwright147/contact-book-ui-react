@@ -19,7 +19,7 @@ const List = ({ items }) => (
                         <td>{item.id}</td>
                         <td>{item.firstName} {item.surname}</td>
                         <td>{item.email}</td>
-                        <td>{item.address1} {item.address2} {item.address3} {item.city} {item.postcode} </td>
+                        <td>{item.address1} {item.address2} {item.address3} {item.city} {item.postcode}</td>
                     </tr>
                 )}
             </tbody>
