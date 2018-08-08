@@ -6,6 +6,7 @@ import common from './webpack.config.common.babel.js';
 export default merge(common, {
     output: {
         path: path.resolve('dist'),
-        filename: 'bundle.js'
+        filename: 'bundle.js',
+        publicPath: '/'
     },
 });
