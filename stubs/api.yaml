@@ -29,4 +29,15 @@
     headers:
       content-type: application/json
       server: stubbedServer/4.2
-    body: '{ "id": 101, "message": "success" }'
+    body: '{ "message": "success" }'
+
+- request:
+    url: ^/api/contact/?$
+    method: PUT
+  response:
+    status: 200
+    latency: 50
+    headers:
+      content-type: application/json
+      server: stubbedServer/4.2
+    body: '{ "id": 101, message": "success" }'

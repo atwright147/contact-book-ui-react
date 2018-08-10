@@ -31,11 +31,11 @@ const send = () =>
     (dispatch, getState) => {
         dispatch({ type: 'sendContact/STARTED' });
 
-        let method = 'PUT';
+        let method = 'POST';
         let data = Object.assign({}, getState().dynamic);
         const url = '/api/contact';
-        if (getState().dynamic.id) {
-            method = 'POST';
+        if (data.id) {
+            method = 'PUT';
             delete data.id;
         }
 
