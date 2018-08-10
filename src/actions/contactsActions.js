@@ -28,4 +28,27 @@ const get = (id) =>
             })
     }
 
-export default { getContactsAll, get };
+const send = () =>
+    (dispatch, getState) => {
+        dispatch({ type: 'sendContact/STARTED' });
+
+        let method = 'PUT';
+        let data = Object.assign({}, getState().dynamic);
+        const url = '/api/contact';
+        if (getState().dynamic.id) {
+            method = 'POST';
+            delete data.id;
+        }
+
+        return axios.request({ url, method, data })
+            .then((response) => {
+                dispatch(rrfActions.merge('dynamic', response.data));
+                dispatch({ type: 'sendContact/SUCCEEDED' });
+            })
+            .catch((error) => {
+                console.error(error);
+                dispatch({ type: 'sendContact/FAILED' })
+            })
+    }
+
+export default { getContactsAll, get, send };

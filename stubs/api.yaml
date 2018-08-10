@@ -20,3 +20,13 @@
       server: stubbedServer/4.2
     file: api/contact/<% url[1] %>.json
 
+- request:
+    url: ^/api/contact/?$
+    method: POST
+  response:
+    status: 200
+    latency: 50
+    headers:
+      content-type: application/json
+      server: stubbedServer/4.2
+    body: '{ "id": 101, "message": "success" }'
