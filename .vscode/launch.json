@@ -28,7 +28,7 @@
         {
             "type": "node",
             "request": "launch",
-            "name": "Unit Tests",
+            "name": "Unit Tests: Current File",
             "program": "${workspaceRoot}/node_modules/.bin/_mocha",
             "cwd": "${workspaceRoot}",
             "args": [
