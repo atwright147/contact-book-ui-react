@@ -20,7 +20,7 @@ const get = (id) =>
         return axios.get(`/api/contact/${id}`)
             .then((response) => {
                 dispatch(rrfActions.merge('dynamic', response.data));
-                dispatch({ type: 'getContact/STARTED' });
+                dispatch({ type: 'getContact/SUCCEEDED' });
             })
             .catch((error) => {
                 console.error(error);
