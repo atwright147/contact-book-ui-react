@@ -41,7 +41,9 @@ const send = () =>
 
         return axios.request({ url, method, data })
             .then((response) => {
-                dispatch(rrfActions.merge('dynamic', response.data));
+                if (method === 'POST') {
+                    dispatch(rrfActions.merge('dynamic', { id: response.data.id }));
+                }
                 dispatch({ type: 'sendContact/SUCCEEDED' });
             })
             .catch((error) => {
