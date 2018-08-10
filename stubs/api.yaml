@@ -29,7 +29,7 @@
     headers:
       content-type: application/json
       server: stubbedServer/4.2
-    body: '{ "message": "success" }'
+    body: '{ "id": 101, "message": "success" }'
 
 - request:
     url: ^/api/contact/?$
@@ -40,4 +40,4 @@
     headers:
       content-type: application/json
       server: stubbedServer/4.2
-    body: '{ "id": 101, message": "success" }'
+    body: '{ message": "success" }'
