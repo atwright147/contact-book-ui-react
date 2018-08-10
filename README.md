@@ -1,6 +1,6 @@
-# React Template
+# Contact Book UI (React)
 
-This is a reference app for best practices regarding React, Redux, Webpack and their associated tools.
+This is a React based UI to work with Contact Book Orchestration.
 
 ## Installation
 

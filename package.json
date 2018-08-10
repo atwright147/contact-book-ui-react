@@ -1,7 +1,7 @@
 {
-  "name": "react-template",
+  "name": "contact-book-ui-react",
   "version": "1.0.0",
-  "description": "This is a reference app for best practices regarding React, Redux, Webpack and their associated tools.",
+  "description": "A React based UI to work with Contact Book Orchestration",
   "main": "src/index.js",
   "scripts": {
     "build": "webpack -p --config webpack.config.prod.babel.js",
@@ -59,10 +59,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/atwright147/react-template.git"
+    "url": "git+https://github.com/atwright147/contact-book-ui-react.git"
   },
   "bugs": {
-    "url": "https://github.com/atwright147/react-template/issues"
+    "url": "https://github.com/atwright147/contact-book-ui-react/issues"
   },
-  "homepage": "https://github.com/atwright147/react-template#readme"
+  "homepage": "https://github.com/atwright147/contact-book-ui-react#readme",
+  "directories": {
+    "test": "test"
+  }
 }
