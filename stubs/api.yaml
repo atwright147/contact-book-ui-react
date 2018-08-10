@@ -10,7 +10,7 @@
     file: api/contacts-all.json
 
 - request:
-    url: ^/api/contact/1$
+    url: ^/api/contact/(\d)$
     method: GET
   response:
     status: 200
@@ -18,4 +18,5 @@
     headers:
       content-type: application/json
       server: stubbedServer/4.2
-    file: api/contact/1.json
+    file: api/contact/<% url[1] %>.json
+
