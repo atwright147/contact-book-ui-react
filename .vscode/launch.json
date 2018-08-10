@@ -10,6 +10,34 @@
             "request": "launch",
             "url": "http://localhost:8080",
             "webRoot": "${workspaceRoot}"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Unit Tests",
+            "program": "${workspaceRoot}/node_modules/.bin/_mocha",
+            "cwd": "${workspaceRoot}",
+            "args": [
+                "-u", "tdd",
+                "--timeout=999999",
+                "--colors",
+                "--opts", "${workspaceRoot}/mocha.opts",
+                "${workspaceRoot}/src/**/*.spec.js"
+            ],
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Unit Tests",
+            "program": "${workspaceRoot}/node_modules/.bin/_mocha",
+            "cwd": "${workspaceRoot}",
+            "args": [
+                "-u", "tdd",
+                "--timeout=999999",
+                "--colors",
+                "--opts", "${workspaceRoot}/mocha.opts",
+                "${file}"
+            ],
         }
     ]
 }
