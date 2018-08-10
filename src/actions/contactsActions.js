@@ -15,11 +15,10 @@ const getContactsAll = () =>
 const get = (id) =>
     (dispatch) => {
         dispatch({ type: 'getContact/STARTED' });
-        dispatch(rrfActions.reset('dynamic'));
 
         return axios.get(`/api/contact/${id}`)
             .then((response) => {
-                dispatch(rrfActions.merge('dynamic', response.data));
+                dispatch(rrfActions.load('dynamic', response.data));
                 dispatch({ type: 'getContact/SUCCEEDED' });
             })
             .catch((error) => {
