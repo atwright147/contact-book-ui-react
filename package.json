@@ -10,7 +10,7 @@
     "dev:stubs": "npm run dev & npm run stubs",
     "stubs": "stubby -d ./stubs/api.yaml --watch",
     "lint": "eslint .",
-    "test": "mocha './src/**/*.spec.js' --opts ./mocha.opts"
+    "test": "nyc --reporter=html mocha './src/**/*.spec.js' --opts ./mocha.opts"
   },
   "keywords": [],
   "author": "Andy Wright",
@@ -43,6 +43,7 @@
     "jsdom": "^11.12.0",
     "jsdom-global": "^3.0.2",
     "mocha": "^5.2.0",
+    "nyc": "^12.0.2",
     "postcss": "^7.0.2",
     "postcss-comment": "^2.0.0",
     "postcss-cssnext": "^3.1.0",
