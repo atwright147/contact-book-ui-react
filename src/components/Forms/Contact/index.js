@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import Form from './Form.js';
 import contactsActions from '../../../actions/contactsActions.js';
 
-const mapDispatchToProps = (dispatch) => ({
+export const mapDispatchToProps = (dispatch) => ({
     onSubmitHandler: () => dispatch(contactsActions.send())
 });
 
